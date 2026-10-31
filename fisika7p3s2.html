@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Падение тел с Пизанской башни: анимация и исторический факт</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* Надёжное центрирование без искажений */
+        .player-wrapper {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .player-wrapper object,
+        .player-wrapper embed,
+        .player-wrapper iframe {
+            display: inline-block;
+            margin: 0 auto;
+            max-width: 100%;
+            width: 800px;
+            height: 600px;
+        }
+
+        p, li {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: decimal;
+            padding-left: 24px;
+        }
+        .italic-text {
+            font-style: italic;
+            text-align: right;
+        }
+        .instructions {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #2c3e50;
+            margin: 20px 0;
+        }
+        .historical-note {
+            background: #fff8e1;
+            border: 1px solid #ffe082;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Наблюдение за падением тел с Пизанской башни</h1>
+
+        <div class="player-wrapper">
+            <object type="application/x-shockwave-flash" data="fisika7p3s2.swf" width="800" height="600">
+                <param name="movie" value="fisika7p3s2.swf">
+            </object>
+        </div>
+
+        <!-- Ruffle подключаем после плеера -->
+        <script src="https://unpkg.com/@ruffle-rs/ruffle/ruffle.js"></script>
+
+        <div class="instructions">
+            <h3>Сюжет шуточной анимации:</h3>
+            <ol>
+                <li>Мультяшный герой поднимается на крышу Пизанской башни.</li>
+                <li>Подойдя к краю крыши, он вытягивает левую руку и разжимает пальцы.</li>
+                <li>Из руки падают два разных шара. Герой «очень быстро» спускается с башни на землю, занимает удобную позицию и наблюдает, как шары приближаются к земле и падают практически одновременно. «Этого не может быть!» — восклицает герой. «Нужно проверить ещё раз!»</li>
+            </ol>
+        </div>
+
+        <div class="historical-note">
+            <strong>Историческая справка:</strong><br>
+            Опыт Галилея с бросанием ядер с Пизанской башни — это, скорее всего, красивая легенда, а не подтверждённый исторический факт. Важнее не само бросание, а идея Галилея: проверять утверждения с помощью наблюдений и экспериментов. Именно этот подход стал основой научного метода в физике.
+        </div>
+
+        <hr>
+
+        <nav>
+            <a href="https://сомит.рф/index.html">← На главную</a>
+        </nav>
+
+        <footer>
+            <div class="italic-text">
+                <hr>
+                © 2024–2026 сомит.рф
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

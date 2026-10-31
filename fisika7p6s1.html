@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Физика и техника. История передачи сообщения на большое расстояние</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* Контейнер для центрирования */
+        .player-wrapper {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Размеры плеера */
+        #ruffle-player {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 4/3; /* Если анимация 16:9 — поставь 16/9 */
+            display: block;
+            margin: 0 auto;
+            background: #000; /* Чёрный фон, чтобы видеть границы плеера */
+        }
+
+        p, li { line-height: 1.6; }
+        ul { list-style-type: decimal; padding-left: 24px; }
+        .italic-text { font-style: italic; text-align: right; }
+        
+        .instructions {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #2c3e50;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Шуточная история открытия мобильной связи</h1>
+
+        <div class="player-wrapper">
+            <!-- Ruffle сам подхватит этот объект -->
+            <object id="ruffle-player" type="application/x-shockwave-flash" data="fisika7p6s1.swf" width="800" height="600">
+                <param name="movie" value="fisika7p6s1.swf">
+            </object>
+        </div>
+
+        <!-- Подключаем Ruffle -->
+        <script src="https://unpkg.com/@ruffle-rs/ruffle/ruffle.js"></script>
+
+        <div class="instructions">
+            <h3>Работа с анимацией</h3>
+            <ol>
+                <li>Щёлкните по кнопке «Play» («Начать демонстрацию»), чтобы запустить часть-1 шуточной анимации.</li>
+                <li>Анимация переносит нас в каменный век. Перед пещерой, стены которой изрисованы сценами охоты на различных животных, сидит человек с наброшенной на плечи шкурой.</li>
+                <li>Он о чём-то усиленно думает. Вдруг его осеняет мысль, и он, подпрыгнув, начинает собирать ветки, разбросанные вокруг по земле, и бросать их в небольшой костёр, который начинает гаснуть.</li>
+                <li>Человек падает на колени и начинает усиленно раздувать огонёк, в результате чего над костром появляются клубы чёрного дыма.</li>
+                <li>В это время за высокой горой сидит женщина и мечтает о своём. Вдруг её взгляд падает на клубы чёрного дыма, поднимающиеся из-за гор. Она быстро встаёт и несётся за гору на фоне появившегося текста: «Так было передано и получено первое сообщение».</li>
+            </ol>
+        </div>
+
+        <hr>
+        <nav>
+            <a href="https://сомит.рф/index.html">← На главную</a>
+        </nav>
+        <footer>
+            <div class="italic-text">
+                <hr>
+                © 2024–2026 сомит.рф
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
